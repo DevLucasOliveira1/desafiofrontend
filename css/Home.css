@@ -116,6 +116,12 @@ section.selecao .selecao-box .selecao-box-single-none{
     display: none;
 }
 
+section.selecao .selecao-box .selecao-box-single .img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 
 section.selecao .selecao-box .selecao-box-single h5{
     font-size: 14px;
@@ -281,6 +287,13 @@ section.share .share-form .share-form-input input[type="email"]{
     section.selecao .selecao-box .selecao-box-single{
         width: 100%;
         display: flex;
+    }
+
+    section.selecao .selecao-box .selecao-box-single:nth-child(5),
+    section.selecao .selecao-box .selecao-box-single:nth-child(6),
+    section.selecao .selecao-box .selecao-box-single:nth-child(7),
+    section.selecao .selecao-box .selecao-box-single:nth-child(8){
+        display: none;
     }
 
     section.selecao .selecao-box .selecao-box-single .selecao-box-single-content{

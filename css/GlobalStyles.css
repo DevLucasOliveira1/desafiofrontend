@@ -30,7 +30,7 @@ footer{
     text-align: center;
     background-image: url('../images/home/bg/bg2.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color: white;
     position: relative;
     margin-top: 71.6px;
@@ -166,6 +166,7 @@ footer div{
     
     footer{
         height: 250px;
+        background-position: center;
     }
 
     footer div{
