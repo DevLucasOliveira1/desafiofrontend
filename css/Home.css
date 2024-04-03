@@ -8,6 +8,7 @@ section.bg{
     background-image: url('/images/home/bg/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     padding: 69px 0;
     color: white;
@@ -44,10 +45,14 @@ section.form .w50:nth-child(1){
     padding-right: 60px;
 }
 
+section.form .w50 i{
+    display: none;
+}
+
 section.form .w50 h2{
     font-size: 20px;
     margin-bottom: 30px;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 section.form .w50:nth-child(2){
@@ -103,7 +108,14 @@ section.selecao .selecao-box{
 
 section.selecao .selecao-box .selecao-box-single{
     width: 200px;
+    margin-bottom: 39px;
 }
+
+section.selecao .selecao-box .selecao-box-single-none{
+    width: 200px;
+    display: none;
+}
+
 
 section.selecao .selecao-box .selecao-box-single h5{
     font-size: 14px;
@@ -141,6 +153,7 @@ section.share{
 section.share .container-wraper{
     max-width: 820px;
     margin: 0 auto;
+    padding: 0 2%;
 }
 
 section.share p{
@@ -166,3 +179,134 @@ section.share .share-form .share-form-input input[type="email"]{
     border: 1px solid #707070;
     outline: none;
 }
+
+/*===========================================================================*/
+/*=================================RESPONSIVO================================*/
+/*===========================================================================*/
+
+/*=======================================*/
+/*===================BG==================*/
+/*=======================================*/
+
+@media screen and (max-width: 700px){
+
+    section.bg{
+        text-align: left;
+    }
+    
+    section.bg .bg-text h2{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    section.bg .bg-text h1{
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    
+    section.bg .bg-buttons{
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    section.bg .bg-buttons button{
+        width: 40%;
+        margin-top: 20px;
+    }
+
+}
+
+/*=======================================*/
+/*=================FORM==================*/
+/*=======================================*/
+
+
+@media screen and (max-width: 900px){
+    
+    section.form > .container{
+        flex-wrap: wrap;
+    }
+
+    section.form .w50:nth-child(1){
+        width: 100%;
+        padding-right: 0px;
+        position: relative;
+    }
+
+    section.form .w50 h2{
+        padding-right: 20px;
+    }
+
+    section.form .w50 i{
+        position: absolute;
+        top: 5px;
+        right: 0;
+        font-size: 20px;
+        display: block;
+    }
+
+    section.form .w50:nth-child(2){
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
+/*=======================================*/
+/*================SELECAO================*/
+/*=======================================*/
+
+@media screen and (max-width: 850px){
+
+    section.selecao .selecao-box .selecao-box-single-none{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 641px){
+
+    section.selecao .selecao-box{
+        justify-content: space-evenly;
+    }
+
+    section.selecao .selecao-box .selecao-box-single-none{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+
+    section.selecao .selecao-box .selecao-box-single{
+        width: 100%;
+        display: flex;
+    }
+
+    section.selecao .selecao-box .selecao-box-single .selecao-box-single-content{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+        padding-left: 23px;
+    }
+
+    section.selecao .selecao-box .selecao-box-single p{
+        display: none;
+    }
+
+}
+
+/*=======================================*/
+/*==================SHARE================*/
+/*=======================================*/
+
+@media screen and (max-width: 768px){
+
+    section.share .share-form .share-form-input{
+        width: 100%;
+    }
+
+}
+

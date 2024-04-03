@@ -30,7 +30,7 @@ footer{
     text-align: center;
     background-image: url('../images/home/bg/bg2.png');
     background-size: cover;
-    background-position: top;
+    background-position: center;
     color: white;
     position: relative;
     margin-top: 71.6px;
@@ -86,6 +86,9 @@ footer div{
     width: 100%;
     text-align: center;
     color: #888888;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 .section-title h2{
@@ -141,3 +144,32 @@ footer div{
 .btn1:hover, .btn2:hover, .btn3:hover{
     scale: 1.05;
 }
+
+/*===========================================================================*/
+/*=================================RESPONSIVO================================*/
+/*===========================================================================*/
+
+
+/* SECTION TITLE */
+
+@media screen and (max-width: 768px){
+
+    .section-title{
+        padding: 0 0;
+    }
+
+}
+
+/* Footer */
+
+@media screen and (max-width: 768px){
+    
+    footer{
+        height: 250px;
+    }
+
+    footer div{
+        bottom: 66px;
+    }
+
+} 
