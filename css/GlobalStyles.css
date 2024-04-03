@@ -14,7 +14,7 @@ html, body{
 /* Global */
 
 .container{
-    max-width: 920px;
+    max-width: 1020px;
     margin: 0 auto;
     padding: 0 2%;
 }
@@ -23,7 +23,31 @@ html, body{
     clear: both;
 }
 
+footer{
+    width: 100%;
+    height: 300px;
+    padding: 0 2%;
+    text-align: center;
+    background-image: url('../images/home/bg/bg2.png');
+    background-size: cover;
+    background-position: top;
+    color: white;
+    position: relative;
+    margin-top: 71.6px;
+}
+
+footer div{
+    position: absolute;
+    bottom: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* Auxiliares */
+
+.flex{
+    display: flex;
+}
 
 .w100{
     width: 100%;
@@ -37,13 +61,13 @@ html, body{
     width: 32%;
 }
 
-.x50{
+.center-x{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.y50{
+.center-y{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -56,50 +80,64 @@ html, body{
     transform: translate(-50%, -50%);
 }
 
-/* SECTIONS */
+/* SECTIONS TITLES */
 
-.name-section{
-    color: #ffdf2d;
+.section-title{
+    width: 100%;
+    text-align: center;
+    color: #888888;
 }
 
-.line-section{
-    width: 100px;
-    height: 2px;
-    margin: 15px 0;
-    background-color: #ffdf2d;
-    margin-bottom: 20px;
+.section-title h2{
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    top: -21px;
+    padding: 10px 15px;
+    background-color: white;
+    display: inline-block;
 }
 
-.text-section{
-    color: #ccc;
-    margin-bottom: 20px;
+.section-title-line{
+    width: 100%;
+    height: 1px;
+    background-color: #707070;
 }
 
 /* BUTTONS */
 
-.btn1{
-    background-color: #ffdf2d;
-    color: black;
-    padding: 10px 25px;
-    font-weight: bold;
-    border: 2px solid transparent;
+.btn1{    
+    width: 160px;
+    height: 40px;
+    background: white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 10px;
+    color: #888888;
     transition: 0.3s;
-    position: relative;
 }
 
 .btn2{
-    background-color: transparent;
-    border: 2px solid #ffdf2d;
-    padding: 10px 25px;
-    color: #ffdf2d;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #707070;
+    color: #707070;
+    background-color: white;
     transition: 0.3s;
 }
 
-.btn1:hover, .btn2:hover{
-    scale: 0.9;
+.btn3{
+    width: 260px;
+    height: 39px;
+    border-radius: 4px;
+    border: 1px solid #707070;
+    color: #707070;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover{
+    scale: 1.05;
 }
